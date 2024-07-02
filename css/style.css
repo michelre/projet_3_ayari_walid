@@ -1,7 +1,56 @@
-/****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
 }
+
+/******  Mes propriétés CSS  *****/
+
+/* header */
+
+.headstyle {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.headlogo{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 35px;
+    padding: 30px 50px 30px 50px;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+.headmenu {
+    display: flex;
+    height: 35px;
+    width: 144px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px 0px 50px;
+    gap: 68px;
+}
+.headflex:hover a {
+    padding: 6px 0 0 0;
+    box-shadow: 0px -2px 0px #0065FC;
+}
+.headflex {
+    display: inline;
+    font: 16px sans-serif;
+}
+
+
+
+
+/****** General ***********/
 
 :root {
     --main-color: #0065FC;

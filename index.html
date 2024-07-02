@@ -17,16 +17,21 @@
 <body>
     <div class="main-container">
         <!--Je commence par mettre en forme le header
-        en y intégrant le logo et les liens de navigation-->
+        en y intégrant le logo et les liens de navigation
+        je mets des Div pour pouvoir mettre les display-flex -->
+
+        <!--  j'ai un peu de mal avec le display:flex je comprend la logique et l'utilité
+          mais je n'arrive pas à le reproduire comme je le veux -->
         <header>
-            <div>
-                <span> <img src="images/logo/Booki.png" alt="logo"> </span>
-                <div>
-<a href="">Hébergements</a>
-<a href="">Activités</a>
-                </div>
+            <div class="headstyle">
+                <div> <img class="headlogo" src="images/logo/Booki.png" alt="logo"> </div>
+                <nav class="headmenu">
+                    <div class="headflex"><a href="">Hébergements</a></div>
+                    <div class="headflex"><a href="">Activités</a></div>
+                </nav>
             </div>
         </header>
+        <!-- j'ai fini le header mais je ne suis pas satifait-->
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
