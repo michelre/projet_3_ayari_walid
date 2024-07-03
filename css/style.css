@@ -18,15 +18,14 @@
 .headlogo{
     position: relative;
     bottom: 10px;
+    right: 50px; /* pour qu'il se place au début */
     display: flex;
-    justify-content: center;
-    align-content: center;
     height: 35px;
     padding: 30px 50px 30px 50px;
     max-width: 100%;
     max-height: 100%;
-    
 }
+
 .headmenu {
     display: flex;
     height: 35px;
@@ -46,8 +45,46 @@
     display: inline;
     font: 16px sans-serif;
 }
+.Title h1 {
+    margin-top: 28;
+    font-size: 22px;
+}
+/* Rechercher */
 
+/* je crée des "box" pour assurer une harmonie visuelle des "margin" et des "element" */
 
+.Rechercher section {
+    box-sizing: border-box; /* Assure que les éléments s'ajustent correctement dans leur conteneur */
+    width: 100%;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+/* Activités */
+.Activités section {
+    padding: 30px;
+    box-sizing: border-box; /* Assure que les éléments s'ajustent correctement dans leur conteneur */
+    width: 100%;
+    margin-top: 28px;
+}
+/* Footer */
+
+/* Mise en page, utilisation des "flexbox" */
+.Footstyle {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    background-color: var(--main-bg-color);
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 28px;
+    
+}
+h4 {
+    font-size: 18px;
+}
+/* paddind pour le text */
+.footbox {
+    padding-left: 20px;
+}
 
 
 /****** General ***********/
@@ -66,10 +103,11 @@ body {
     display: flex;
     justify-content: center;
 }
-
+/* modification largeur minimum */
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px; /* ⬅︎  */
     padding: 0 50px;
     box-sizing: border-box;
 }

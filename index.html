@@ -16,7 +16,7 @@
 
 <body>
     <div class="main-container">
-        <!--Je commence par mettre en forme le header
+        <!-- "1" Je commence par mettre en forme le header
         en y intégrant le logo et les liens de navigation
         je mets des Div pour pouvoir mettre les display-flex -->
 
@@ -24,18 +24,30 @@
           mais je n'arrive pas à le reproduire comme je le veux -->
         <header>
             <div class="headstyle">
-                <div> <img class="headlogo" src="images/logo/Booki.png" alt="logo"> </div>
+                <div class="headlogo"> <img src="images/logo/Booki.png" alt="logo"> </div>
                 <nav class="headmenu">
-                    <div class="headflex"><a href="">Hébergements</a></div>
-                    <div class="headflex"><a href="">Activités</a></div>
+                    <div class="headflex"><a href="#lienH">Hébergements</a></div>
+                    <div class="headflex"><a href="#lienA">Activités</a></div>
                 </nav>
             </div>
         </header>
         <!-- j'ai fini le header mais je ne suis pas satifait-->
         <main>
+            <!-- "2" Création de section pour la partie recherche d'hébergement-->
+            <div class="Rechercher">
+                <section>
+                    <h1 class="Title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>
+                        En plein centre-ville ou en pleine nature
+                    </p>
+                    <p>
+                        Plus de 500 logements sont disponibles dans cette ville
+                    </p>
+                </section>
+            </div>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-
+                    <h2 id="lienH" class="section-title">Hébergements à Marseille</h2>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
@@ -106,8 +118,59 @@
                     </div>
                 </section>
             </div>
+            <!-- "3" Création de la section Activités à Marseille-->
+            <div class="Activités">
+                <section>
+                    <h2 class="section-title">Activités à Marseille</h2>
+                </section>
+            </div>
         </main>
-        <footer></footer>
+        <!-- "4" création et fin du Footer en utilisant 
+         display:grid et des box afin de coller visuellement à la maquette-->
+         
+        <footer>
+            <div class="Footstyle">
+                <div class="footbox">
+                    <div>
+                        <h4>À propos</h4>
+                    </div>
+                    <div>
+                        <p>Fonctionnement du site</p>
+                    </div>
+                    <div>
+                        <p>Conditions générales</p>
+                    </div>
+                    <div>
+                        <p>Données et confidentialité</p>
+                    </div>
+                </div>
+
+                <div class="footbox">
+                    <div>
+                        <h4>Nos hébergements</h4>
+                    </div>
+                    <div>
+                        <p>Charte qualité</p>
+                    </div>
+                    <div>
+                        <p>Proposer votre hôtel</p>
+                    </div>
+                </div>
+
+                <div class="footbox">
+                    <div>
+                        <h4>Assistance</h4>
+                    </div>
+                    <div>
+                        <p>Centre d’aide</p>
+                    </div>
+                    <div>
+                        <p>Nous contacter</p>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
     </div>
 </body>
 
