@@ -20,7 +20,7 @@
     bottom: 10px;
     right: 50px; /* pour qu'il se place au début */
     display: flex;
-    height: 35px;
+    height: 19px; /* pour correspondre en taille à la maquette */
     padding: 30px 50px 30px 50px;
     max-width: 100%;
     max-height: 100%;
@@ -142,6 +142,70 @@ fieldset i {
     text-decoration: none;
     border-radius: 50px;
 }
+/* Hébergements */
+
+.hebergement-grid {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 207px 207px;
+    gap: 30px;
+    margin-top: 28px;
+}
+
+.lien-conteneur {
+    position: relative;
+}
+
+.card-h {
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card-h img {
+    object-fit: cover;
+}
+
+.card-h-title {
+    font-size: 16px;
+}
+
+.hebergement-grid .card-h {
+    margin-top: 28px;
+}
+
+.card-h-content {
+    width: 250px;
+    height: 83px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 15px;
+}
+.hebergement-grid img {
+    width: 250px;
+    height: 114px;
+    padding-left: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 2px solid #FFFFFF;
+}
+
+
+
+.hebergement-grid .card-h-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergement-grid .card-h-subtitle {
+    margin: 0;
+}
+
+.hebergement-grid .card-h-rating {
+    margin-bottom: 5px;
+}
+
 /* Activités */
 .Activités section {
     padding: 30px;
@@ -149,6 +213,8 @@ fieldset i {
     width: 100%;
     margin-top: 28px;
 }
+
+
 /* Footer */
 
 /* Mise en page, utilisation des "flexbox" */
@@ -242,12 +308,15 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: 871px;
+    height: 614px;
+    margin-right: 20px;
 }
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    width: 429px;
+    height: 614px;
 }
 
 .populaires-title {
