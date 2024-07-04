@@ -146,10 +146,11 @@ fieldset i {
 
 .hebergement-grid {
     display: grid;
-    grid-template-columns: 250px 250px 250px;
+    grid-template-columns: 30% 30% 30%;
     grid-template-rows: 207px 207px;
-    gap: 30px;
-    margin-top: 28px;
+    gap: 30px ;
+    padding-bottom: 30px;
+
 }
 
 
@@ -164,8 +165,7 @@ fieldset i {
 }
 
 .card-h img {
-    max-width: 246px;
-    max-height: 120px;
+    object-fit: cover;
 }
 
 .card-h-title {
@@ -182,7 +182,6 @@ fieldset i {
     padding-left: 15px;
 }
 .hebergement-grid img {
-    width: 240px;
     height: 114px;
     padding-left: 0px;
     border-top-left-radius: 20px;
@@ -203,6 +202,13 @@ fieldset i {
 
 .hebergement-grid .card-h-rating {
     margin-bottom: 5px;
+}
+.afficher {
+    display: flex;
+    text-emphasis-position: end;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 28px;
 }
 
 /* Activités */
