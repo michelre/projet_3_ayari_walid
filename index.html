@@ -40,9 +40,40 @@
                     <p>
                         En plein centre-ville ou en pleine nature
                     </p>
+             <!-- "5" Bouton recherche actif -->       
+                    <form method="get" action="">
+                        <fieldset>
+                            <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
+                            <input class="field-form" type="text" name="ville" id="rechercher" placeholder="Marseille, France" size="30" maxlength="20" required>
+                            <input class="field-button" type="submit" value="Rechercher">
+                        </fieldset>
+                    </form>
+                    <div class="filtre-contain">
+                        <h4>Filtres</h4>
+                        
+                        <div class="filtre">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <a  href="">Économique</a>
+                        </div>
+                        <div class="filtre">
+                            <i class="fa-solid fa-person"></i>
+                            <a  href="">Familial</a>
+                        </div>
+                        <div class="filtre">
+                            <i class="fa-solid fa-heart"></i>
+                            <a  href="">Romantique</a>
+                        </div>
+                        <div class="filtre">
+                            <i class="fa-solid fa-fire"></i>
+                            <a  href="">Nos pépites</a>
+                        </div>
+
+                    </div>
+                    <div>
                     <p>
-                        Plus de 500 logements sont disponibles dans cette ville
+                        <i class=" info fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville
                     </p>
+                </div>
                 </section>
             </div>
             <div class="hebergements-and-populaires">
@@ -127,7 +158,7 @@
         </main>
         <!-- "4" création et fin du Footer en utilisant 
          display:grid et des box afin de coller visuellement à la maquette-->
-         
+
         <footer>
             <div class="Footstyle">
                 <div class="footbox">
