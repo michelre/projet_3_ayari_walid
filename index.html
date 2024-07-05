@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -37,7 +38,7 @@
             <div class="Rechercher">
                 <section>
                     <h1 class="Title">Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>
+                    <p class="subtitle">
                         En plein centre-ville ou en pleine nature
                     </p>
                     <!-- "5" Bouton recherche actif -->
@@ -46,28 +47,33 @@
                             <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
                             <input class="field-form" type="text" name="ville" id="rechercher"
                                 placeholder="Marseille, France" size="30" maxlength="20" required>
-                            <input class="field-button" type="submit" value="Rechercher">
+                            <button class="field-button" type="submit">
+                                <span>Rechercher</span>
+                                <i class="icon-search fas fa-search"></i>
+                            </button>
                         </fieldset>
                     </form>
                     <div class="filtre-contain">
                         <h4>Filtres</h4>
-
-                        <div class="filtre">
-                            <i class="fa-solid fa-money-bill-wave"></i>
-                            <a href="">Économique</a>
-                        </div>
-                        <div class="filtre">
-                            <i class="fa-solid fa-person"></i>
-                            <a href="">Familial</a>
-                        </div>
-                        <div class="filtre">
-                            <i class="fa-solid fa-heart"></i>
-                            <a href="">Romantique</a>
-                        </div>
-                        <div class="filtre">
-                            <i class="fa-solid fa-fire"></i>
-                            <a href="">Nos pépites</a>
-                        </div>
+                        <ul class="filtre-container">
+                            <li class="filtre">
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                                <a href="">Économique</a>
+                            </li>
+                            <li class="filtre">
+                                <i class="fa-solid fa-person"></i>
+                                <a href="">Familial</a>
+                            </li>
+                            <li class="filtre">
+                                <i class="fa-solid fa-heart"></i>
+                                <a href="">Romantique</a>
+                            </li>
+                            <li class="filtre">
+                                <i class="fa-solid fa-fire"></i>
+                                <a href="">Nos pépites</a>
+                            </li>
+                        </ul>
+                        
 
                     </div>
                     <div>
@@ -290,7 +296,7 @@
                 </section>
                 <!-- "7" Création de la section card-->
                 <section>
-                    <div class="activité-grid">
+                    <div class="activite-grid">
                         <a href="#">
                             <article class="card-a">
                                 <img src="./images/activites/reno-laithienne.jpg"

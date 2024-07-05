@@ -1,5 +1,7 @@
+
 * {
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /******  Mes propriétés CSS  *****/
@@ -46,9 +48,14 @@
     display: inline;
     font: 16px sans-serif;
 }
-.Title h1 {
+.Title {
     margin-top: 28;
+    margin-bottom: 0;
     font-size: 22px;
+}
+
+.subtitle {
+    margin-top: 8px;
 }
 /* Rechercher */
 
@@ -68,7 +75,7 @@ fieldset {
     height: 50px;
     padding: 0;
     padding-bottom: 0;
-    margin-top: 28px;
+    margin-top: 36px;
     border: 0;
 
 }
@@ -82,6 +89,15 @@ fieldset i {
     border-radius: 15px 0px 0px 15px;
     background-color: #F2F2F2;
 }
+
+.icon-search {
+    background: none;
+    height: auto;
+    width: auto;
+    display: none;
+}
+
+
 /* code pour le bouton submit */ 
 .field-button {
     width: 132px;
@@ -98,7 +114,6 @@ fieldset i {
 }
 /* code pour la partie saisie du formulaire */
 .field-form {
-    height: 50px;
     border: 1px solid #F2F2F2;
     padding: 0px;
     text-align: center;
@@ -118,13 +133,18 @@ fieldset i {
 }
 /* conteneur des filtres mef */
 .filtre-contain {
-    width: 758px;
     display: flex;
     margin-top: 28px;
     align-items: center;
     justify-content: start;
     gap: 10px;
     
+}
+
+.filtre-container {
+    display: flex;
+    gap: 16px;
+    width: 100%;
 }
 /* pour les box filtre */
 .filtre {
@@ -136,6 +156,7 @@ fieldset i {
     border-radius: 50px;
     border: 2px solid #D9D9D9;
     padding: 4px 19px 4px 19px;
+    box-sizing: border-box;
 }
 .filtre:hover {
     background: #DEEBFF;
@@ -221,9 +242,9 @@ fieldset i {
 /* je garde la même structure que pour "hébergements" je change quelques
 propriétés css */
 
-.activité-grid {
+.activite-grid {
     display: grid;
-    grid-template-columns: 22% 22% 22% 22%;
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px ;
     padding: 0px 30px 30px 30px;
 
@@ -251,12 +272,14 @@ propriétés css */
     height: 59px;
     padding-left: 15px;
 }
-.activité-grid img {
+.activite-grid img {
     height: 380px;
+    width: 100%;
     padding-left: 0px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border: 5px solid #FFFFFF;
+    box-sizing: border-box;
 }
 
 
@@ -362,13 +385,12 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 67%;
-    height: 614px;
+
 }
 
 /****** Populaires ***********/
 .populaires {
     width: 33%;
-    height: 614px;
 
 }
 
@@ -381,11 +403,12 @@ a {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+    height: 136px;
 }
 
 .populaires-cards img {
     width: 33%;
-    height: 136px;
+    height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -411,6 +434,7 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
 
 
 
@@ -450,10 +474,19 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activite-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 767.98px) and (min-width: 320px) {
+
+    .hebergements-and-populaires section {
+        background-color: transparent;
+        padding: 0;
+    }
    
     .hebergements-and-populaires {
         flex-direction: column;
@@ -461,6 +494,10 @@ a {
 
     .hebergements {
         width: 100%;
+    }
+
+    .hebergement-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .populaires {
@@ -471,11 +508,12 @@ a {
     .populaires-cards {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 100%;
     }
 
     .populaires-cards .card-title {
@@ -489,10 +527,36 @@ a {
     /* ... */
     p {
         width: 250px;
-        height: 110px;
         text-align: justify;
     }
     .headstyle {
         width: 100%;
+    }
+
+    .activite-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .filtre-contain {
+        flex-wrap: wrap;
+    }
+
+    .filtre-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .filtre {
+        font-size: 14px;
+        padding: 4px 10px 4px 10px;
+    }
+
+    .field-button span {
+        display: none;
+    }
+
+    .icon-search {
+        display: block;
     }
 }
