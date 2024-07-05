@@ -304,11 +304,10 @@ body {
     display: flex;
     justify-content: center;
 }
-/* modification largeur minimum */
+
 .main-container {
     width: 100%;
     max-width: 1440px;
-    min-width: 320px; /* ⬅︎  */
     padding: 0 20px;
     box-sizing: border-box;
 }
@@ -370,6 +369,7 @@ a {
 .populaires {
     width: 33%;
     height: 614px;
+
 }
 
 .populaires-title {
@@ -419,7 +419,7 @@ a {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 768px) {
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -453,6 +453,46 @@ a {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) and (min-width: 320px) {
+   
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+    
     /* ... */
+    p {
+        width: 250px;
+        height: 110px;
+        text-align: justify;
+    }
+    .headstyle {
+        width: 100%;
+    }
 }
