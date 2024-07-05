@@ -310,7 +310,9 @@ li {
     padding-left: 20px;
 }
 
-
+/* Application d'un ordre de section et
+   Application d'un calc en background pour la partie responsive mobile */
+   
 /****** General ***********/
 
 :root {
@@ -371,6 +373,7 @@ a {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 30px;
 }
@@ -385,12 +388,14 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 67%;
+    order: 1;
 
 }
 
 /****** Populaires ***********/
 .populaires {
     width: 33%;
+    order: 2;
 
 }
 
@@ -496,6 +501,7 @@ a {
 
     .hebergements {
         width: 100%;
+        order: 2
     }
 
     .hebergement-grid {
@@ -505,6 +511,7 @@ a {
     .populaires {
         width: 100%;
         margin-top: 50px;
+        order: 1;
     }
 
     .populaires-cards {
@@ -537,7 +544,13 @@ a {
 
     .activite-grid {
         grid-template-columns: repeat(1, 1fr);
+        padding: 0px 30px 30px 0;
+        
     }
+    .activite-grid img {          /* tttttttttt*/
+        height: 141px;
+    }
+
 
     .filtre-contain {
         flex-wrap: wrap;
@@ -560,5 +573,38 @@ a {
 
     .icon-search {
         display: block;
+    }
+    .hebergements-and-populaires .populaires {
+        background-color: #F2F2F2;
+        border-radius: 0;
+        margin: 0;
+        padding:0;
+    }
+   
+    .hebergements-and-populaires .populaires {
+        background-color: #F2F2F2;
+        margin-left: -20px;
+        margin-right: -20px;
+        width: calc(100% + 40px);
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: -20px;
+        margin-bottom: -20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .hebergements-and-populaires .hebergements {
+        background-color: #FFFFFF;
+        border-radius: 0;
+        margin: 0;
+        padding:0;
+    }
+    .bulleinfo p {
+        width: 100%;
+    }
+    .Footstyle {
+        display: flex;
+        flex-direction: column;
+
     }
 }
