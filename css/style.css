@@ -9,13 +9,11 @@
 /* header */
 
 .headstyle {
-    position: relative;
-    height: 80px;
-    width: 100%;
-    background-color: white;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    height: 80px;
+
+
 }
 .headlogo{
     position: relative;
@@ -27,27 +25,30 @@
     max-width: 100%;
     max-height: 100%;
 }
+.headlogo img {
+    width: 61px;
+    height: 19px;
+    object-fit: cover;
+}
+
 
 .headmenu {
     display: flex;
     height: 35px;
-    width: 144px;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 50px 0px 50px;
     gap: 68px;
 }
-.headflex:hover a {
-    padding: 6px 0 0 0;
-    box-shadow: 0px -2px 0px #0065FC;
-    color: #0065FC;
-}
-.headflex {
+.button {
     display: inline;
     font: 16px sans-serif;
+    font-weight: 400;
+    align-content: flex-end;
+
 }
+.button:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
 .Title {
     margin-top: 28;
     margin-bottom: 0;
@@ -157,6 +158,12 @@ fieldset i {
     border: 2px solid #D9D9D9;
     padding: 4px 19px 4px 19px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    place-content: center;
 }
 .filtre:hover {
     background: #DEEBFF;
@@ -328,6 +335,9 @@ li {
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Empêche le débordement horizontal */
 }
 
 .main-container {
@@ -538,9 +548,8 @@ a {
         width: 250px;
         text-align: justify;
     }
-    .headstyle {
-        width: 100%;
-    }
+
+    
 
     .activite-grid {
         grid-template-columns: repeat(1, 1fr);
@@ -605,6 +614,40 @@ a {
     .Footstyle {
         display: flex;
         flex-direction: column;
+    }
 
+/* zzzzzzzzzz*/
+
+    .headstyle {
+        display: block;
+       
+        
+    }
+    .headlogo {
+        position: inherit;
+        display: flex;
+        padding: 30px 30px 30px 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+        
+    
+    
+    .headmenu {
+
+    }
+       
+    .button {
+       display: block;
+        align-content: flex-start;
+    }
+    .button:hover {
+        border-style: solid ; /* Nécessaire pour que les bordures soient visibles */
+        border-width: 0 0 2px 0; /* Définit une largeur de bordure par défaut */
+        border-bottom-width: 2px; /* Largeur de bordure spécifique pour le côté final en ligne */
+        color: #0065FC;
+        border-color: #0065FC;
     }
 }
