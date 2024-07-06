@@ -16,20 +16,16 @@
 
 }
 .headlogo{
-    position: relative;
-    bottom: 10px;
-    right: 50px; /* pour qu'il se place au début */
-    display: flex;
-    height: 19px; /* pour correspondre en taille à la maquette */
-    padding: 30px 50px 30px 50px;
-    max-width: 100%;
-    max-height: 100%;
+    display: block;
+   
 }
 .headlogo img {
-    width: 61px;
-    height: 19px;
+    padding: 30px;
     object-fit: cover;
+    width: 61px;
+
 }
+
 
 
 .headmenu {
@@ -501,6 +497,9 @@ a {
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 767.98px) and (min-width: 320px) {
 
+    .field-button {
+        width: 50px;
+    }
     .hebergements-and-populaires section {
         padding: 0;
     }
@@ -616,38 +615,55 @@ a {
         flex-direction: column;
     }
 
-/* zzzzzzzzzz*/
 
     .headstyle {
-        display: block;
-       
-        
+        display: block;   
+        height: 100%;
     }
+    
     .headlogo {
-        position: inherit;
-        display: flex;
-        padding: 30px 30px 30px 30px;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
     }
-
-    
-        
-    
-    
     .headmenu {
-
+        justify-content: center;
+        gap: 15px;
+        
     }
        
     .button {
        display: block;
         align-content: flex-start;
-    }
-    .button:hover {
+        width: 188px;
+        text-align: center;
         border-style: solid ; /* Nécessaire pour que les bordures soient visibles */
         border-width: 0 0 2px 0; /* Définit une largeur de bordure par défaut */
-        border-bottom-width: 2px; /* Largeur de bordure spécifique pour le côté final en ligne */
-        color: #0065FC;
+        border-bottom-width: 2px;
+        border-color: #F2F2F2;
+        margin-left: -20px;
+        margin-right: -20px;
+        width: calc(100% + 40px);
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: -20px;
+        margin-bottom: -20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .button:hover {
+        width: 188px;
+        text-align: center;
+        border-style: solid ; /* Nécessaire pour que les bordures soient visibles */
+        border-width: 0 0 2px 0; /* Définit une largeur de bordure par défaut */
+        border-bottom-width: 2px;
         border-color: #0065FC;
+        margin-left: -20px;
+        margin-right: -20px;
+        width: calc(100% + 40px);
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: -20px;
+        margin-bottom: -20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
