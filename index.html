@@ -44,7 +44,7 @@
                         En plein centre-ville ou en pleine nature
                     </p>
                     <!-- "5" Bouton recherche actif -->
-                    <form method="get" action="">
+                    <form method="get">
                         <fieldset>
                             <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
                             <input class="field-form" type="text" name="ville" id="rechercher"
@@ -224,7 +224,7 @@
                  jusqu'a ce que j'arrive à debbuguer-->
                 <section class="populaires">
                     <div class="populaires-title">
-                        <h2 id="lienA" class="section-title">Les plus populaires</h2>
+                        <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="populaires-cards">
@@ -292,12 +292,10 @@
                 </section>
             </div>
             <!-- "3" Création de la section Activités à Marseille-->
-            <div class="Activités">
-                <section>
-                    <h2 id="lienA" class="section-title">Activités à Marseille</h2>
-                </section>
+            <section class="Activités">
+                <h2 id="lienA" class="section-title">Activités à Marseille</h2>
                 <!-- "7" Création de la section card-->
-                <section>
+                <div>
                     <div class="activite-grid">
                         <a href="#">
                             <article class="card-a">
@@ -344,8 +342,8 @@
                             </article>
                         </a>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
         </main>
         <!-- "4" création et fin du Footer en utilisant 
          display:grid et des box afin de coller visuellement à la maquette-->
